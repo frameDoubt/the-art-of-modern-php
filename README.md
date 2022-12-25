@@ -1,4 +1,4 @@
 # The Art of Modern PHP - Example Code Repo
 ---
-| Chapter 1: OOP PHP |
+| [Chapter 1: OOP PHP](/chapter-one/) |
 | ------------------ |
