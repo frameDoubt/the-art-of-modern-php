@@ -20,6 +20,8 @@ The parameters we passed are assigned to the `$dogName` and `$dogBreed` properti
 ```php
 $doggo->dogName;
 ```
+> About The Construct Method: this is a public method, it's also a magic method, used to build an object with parameters provided on object instantiation.
+
 You can also reassign the properties value, provided we haven't declared them with a `private` visibility accessor. We can't access the `$dogBreed` property outside the object, because we declared it with a `private` visibility accessor. If we want to access the `$dogBreed` property we would need to make a method/function to access it from within the object. Any property without an assigned visibility accessor will default to a `public` visibility accessor. We could add the following code to our class, so we can output a string with both properties.
 ```php
 public function nameAndBreedString(): void
