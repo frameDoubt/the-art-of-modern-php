@@ -11,22 +11,24 @@
     <?php
         class Dog {
             public string $dogName;
-            public string $dogBreed;
+            private string $dogBreed;
             function __construct(string $param1, string $param2)
             {
                 $this->dogName = $param1;
                 $this->dogBreed = $param2;
             }
-            public function nameAndBreedString(): string
+            public function nameAndBreedString(): void
             {
-                return "This dog is a $this->dogBreed, named $this->dogName <br>";
+                echo "This dog is a $this->dogBreed, named $this->dogName. <br>";
             }
         }
 
-        $doggo1 = new Dog("Lightning", "Koolie");
+        $doggo1 = new Dog("Osmole", "Koolie");
+        $doggo1->crossBreed = "German Shepherd";
         $doggo2 = new Dog("Achroma", "Great Pyrenees");
-        echo $doggo1->nameAndBreedString();
-        echo $doggo2->nameAndBreedString();
+        $doggo1->nameAndBreedString();
+        echo "$doggo1->crossBreed <br>";
+        $doggo2->nameAndBreedString();
     ?>
 </body>
 </html>
