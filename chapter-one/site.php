@@ -10,6 +10,7 @@
     </script>
     <?php
         class Dog {
+            // This code is inside the object, it can access private properties
             public string $dogName;
             private string $dogBreed;
             function __construct(string $param1, string $param2)
@@ -22,7 +23,7 @@
                 echo "This dog is a $this->dogBreed, named $this->dogName. <br>";
             }
         }
-
+        // This code is outside the object, and can't access private properties
         $doggo1 = new Dog("Osmole", "Koolie");
         $doggo1->crossBreed = "German Shepherd";
         $doggo2 = new Dog("Achroma", "Great Pyrenees");
